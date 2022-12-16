@@ -1,0 +1,216 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 15% 3fr;
+    font-size: 36px;
+}
+
+/*.container div {
+    border: 2px solid red;
+}*/
+
+.header {
+    font-size: 24px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 50% 50%;
+}
+
+.welcome {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.welcome p {
+    font-size: 28px;
+    margin-top: -25px;
+}
+
+.welcome img {
+    grid-column: 1 / 2;
+    width: 50%;
+    align-self: center;
+    justify-self: center;
+    border-radius: 40px;
+}
+
+.hi {
+    grid-column: 2 / 3;
+}
+
+.search {
+    padding: 12px 20px;    
+}
+
+input {
+    width: 60%;
+    margin-left: 70px;
+    border-radius: 10px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border: 1px solid #eee;
+    background-color: beige;
+}
+
+.notifications {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 20px; 
+    font-size: 18px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.header-btns {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    
+}
+
+button {
+    background-color: blue;
+    color: white;
+    width: 20%;
+    border-radius: 20px;
+    
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: grid;
+    font-size: 18px;
+    grid-template-rows: 10% 30% 60%;
+    background-color: #776871;
+}
+
+.dashboard {
+   padding: 4px 2px;
+   margin: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   font-size: 24px;  
+}
+
+svg {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.home {
+    padding: 4px 2px;
+    display: inline-block;
+}
+
+
+ul, li {
+    list-style: none;
+    margin-bottom: 1em;   
+}
+
+li {
+   display: flex;
+   align-items: center;   
+   margin-left: 1em;  
+}
+
+.home svg {
+    margin-right: 10px;
+}
+
+.settings svg {
+    margin-right: 10px;
+}
+
+.content {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-size: 14px;
+    gap: 10px;
+    padding: 1em;
+    background-color: bisque;
+    box-sizing: border-box;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    padding: 1em;
+    margin: 5px;
+    box-sizing: border-box;
+    background-color: azure;
+    border-radius: 10px;
+    
+}
+
+.card-text {
+    grid-row: 1 / 2;
+    background-color: azure;
+    padding: 1em;    
+}
+
+.card-icons {
+ display: flex;
+ justify-content: flex-end;
+ background-color: azure;
+ margin-top: 15px;
+
+}
+
+.card-icons svg {
+    margin-right: 15px;
+}
+
+.announcements {
+    grid-column: 3 / 4;
+    grid-row: 1 / 4;
+    font-size: 12px;    
+}
+
+.maintenance {
+    background-color: azure;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 5px;
+}
+
+.trending {
+    margin-top: 20px;
+    background-color: azure;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 5px;
+}
+
+.profiles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profiles img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
